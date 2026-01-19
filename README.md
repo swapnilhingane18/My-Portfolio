@@ -8,7 +8,6 @@ Hypefolio is a feature-rich portfolio website designed to showcase your projects
 ## Features
 
 - Easy to Setup 💯
-- Free to Use ( OpenSource ) 🥳
 - Multi Page 💎
 - Fully Responsive 🚀
 - Super Fast and Optimized for SEO ⚡
