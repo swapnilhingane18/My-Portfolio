@@ -1184,3 +1184,47 @@ display:flex;
 gap:10px;
 margin-top:10px;
 }
+
+
+.about-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+/* Base button */
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 22px;
+  border-radius: 10px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Primary CTA */
+.primary-btn {
+  background: #6c63ff;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(108, 99, 255, 0.35);
+}
+
+.primary-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(108, 99, 255, 0.45);
+}
+
+/* Secondary CTA */
+.secondary-btn {
+  background: transparent;
+  color: #c7c5ff;
+  border: 1px solid rgba(199, 197, 255, 0.4);
+}
+
+.secondary-btn:hover {
+  background: rgba(108, 99, 255, 0.15);
+  transform: translateY(-3px);
+}
