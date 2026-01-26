@@ -178,3 +178,31 @@ let swiperTestimonial = new Swiper(".testimonial-container", {
     },
   },
 });
+
+const form = document.getElementById("project-form");
+const status = document.getElementById("form-status");
+
+if (form) {
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_n8c162u",
+        "YOUR_TEMPLATE_ID",
+        this
+      )
+      .then(
+        () => {
+          status.textContent = "✅ Enquiry sent successfully!";
+          status.style.color = "#22c55e";
+          form.reset();
+        },
+        (error) => {
+          status.textContent = "❌ Failed to send. Try again.";
+          status.style.color = "#ef4444";
+          console.error(error);
+        }
+      );
+  });
+}

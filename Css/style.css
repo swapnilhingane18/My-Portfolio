@@ -1263,3 +1263,95 @@ margin-top:10px;
   background: var(--first-color);
   color: #fff;
 }
+
+
+.about,
+.skills,
+.qualification,
+.portfolio,
+.contact {
+  border-top: 1px solid rgba(255,255,255,0.04);
+}
+
+.portfolio-container {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.swiper-angles {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  pointer-events: all;
+  background: rgba(124, 108, 255, 0.15);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: #7c6cff;
+}
+
+.swiper-icon {
+  font-size: 20px;
+  color: #fff;
+}
+.portfolio-content {
+  align-items: center;
+  column-gap: 3rem;
+}
+.project-img,
+.portfolio-img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+.swiper-wrapper {
+  align-items: center;
+}
+
+.contact-form-container {
+  margin-top: 40px;
+}
+
+.contact-form-title {
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.contact-form {
+  display: grid;
+  gap: 14px;
+  max-width: 450px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+#form-status {
+  font-size: 14px;
+}

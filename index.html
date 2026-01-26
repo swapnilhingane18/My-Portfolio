@@ -155,7 +155,6 @@
           </div>
 
         </div>
-      </div>
     </section>
 
     <!-- skills and qualification  -->
@@ -523,6 +522,8 @@
 
     <!-- contact me  -->
     <section class="contact section" id="contact">
+
+
       <h2 class="section-title">Contact me</h2>
       <span class="section-subtitle">Get in touch</span>
 
@@ -535,6 +536,25 @@
               <a href="mailto:swapnilhingane9290@gmail.com" target="_blank"
                 class="contact-subtitle">swapnilhingane9290@gmail.com</a>
             </div>
+
+            <form id="project-form" class="project-form">
+              <input type="text" name="from_name" placeholder="Your Name" required />
+              <input type="email" name="from_email" placeholder="Your Email" required />
+
+              <select name="project_type" required>
+                <option value="">Select Project Type</option>
+                <option value="Website">Website</option>
+                <option value="Web App">Web App</option>
+                <option value="UI/UX">UI/UX Design</option>
+                <option value="Other">Other</option>
+              </select>
+
+              <textarea name="message" placeholder="Describe your project..." required></textarea>
+
+              <button type="submit" class="button">Send Enquiry</button>
+            </form>
+
+
           </div>
           <div class="contact-info">
             <i class="fa-brands fa-linkedin-in contact-icon"></i>
@@ -592,6 +612,32 @@
   <script src="Libraries/swiper-bundle.min.js"></script>
   <script src="https://kit.fontawesome.com/9b634c15bd.js" crossorigin="anonymous"></script>
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+  (function () {
+    emailjs.init("5rXRhmTGznGaWK1QQ");
+  })();
+
+  document.getElementById("project-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_n8c162u",
+      "template_1cwvgvq",
+      this
+    )
+    .then(() => {
+      alert("✅ Enquiry sent successfully!");
+      this.reset();
+    })
+    .catch((error) => {
+      alert("❌ Failed to send. Try again.");
+      console.error(error);
+    });
+  });
+</script>
+
 </body>
 
 </html>
