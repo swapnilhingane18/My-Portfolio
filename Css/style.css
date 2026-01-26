@@ -1228,3 +1228,38 @@ margin-top:10px;
   background: rgba(108, 99, 255, 0.15);
   transform: translateY(-3px);
 }
+
+.about-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-list li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 18px;
+}
+
+.about-list li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--first-color);
+}
+
+.about-buttons {
+  display: flex;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 1px solid var(--first-color);
+  color: var(--first-color);
+}
+
+.secondary-btn:hover {
+  background: var(--first-color);
+  color: #fff;
+}
