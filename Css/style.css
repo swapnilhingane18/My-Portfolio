@@ -1355,3 +1355,85 @@ margin-top:10px;
 #form-status {
   font-size: 14px;
 }
+
+/* Contact Form Card */
+.contact-form {
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Input Group */
+.input-group {
+  margin-bottom: 18px;
+}
+
+/* Inputs, Select, Textarea */
+.input-group input,
+.input-group select,
+.input-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* Placeholder */
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Focus Effect */
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+  border-color: #7c7cff;
+  box-shadow: 0 0 0 2px rgba(124, 124, 255, 0.25);
+}
+
+/* Select option */
+.input-group select option {
+  background: #1b1b2f;
+  color: #fff;
+}
+
+/* Button */
+.send-btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #7c7cff, #9f7cff);
+  border: none;
+  border-radius: 14px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Button Hover */
+.send-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(124, 124, 255, 0.4);
+}
+
+/* distributive Touch */
+.send-btn:active {
+  transform: scale(0.97);
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .contact-form {
+    padding: 22px;
+  }
+}
