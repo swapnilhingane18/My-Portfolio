@@ -3,7 +3,7 @@
 
 Hypefolio is a feature-rich portfolio website designed to showcase your projects and skills in a captivating way. Built with a tech stack of HTML, CSS, and JavaScript, this responsive portfolio ensures a seamless experience across devices.
 
-## Click Here [https://swapnilhingane.netlify.app/](https://swapnilhingane.in/)
+## Click Here https://swapnilhingane.in/
 
 ## Features
 
